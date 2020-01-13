@@ -1,10 +1,11 @@
 *,
 ::after,
 ::before {
-  box-sizing: border-box;
-  margin: 0;
+box-sizing: border-box; 
+ margin: 0;
   padding: 0;
 }
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -14,7 +15,7 @@ html {
 
 body {
   margin: 0;
-  font-family:  "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  font-family:  'din-arabic-light', sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
@@ -111,15 +112,201 @@ body {
     max-width: 1140px;
   }
 }
+a {
+  font-size:16px;
+  font-family: "din-arabic-bold";
+  text-decoration: none;
+}
 
+h1,h2,h3,h4,h5,h6,p {
+  font-family: "din-arabic-regular";
+}
 
+h1 {
+  font-size:32px
+}
+h2 {
+  font-size:26px
+}
+h3 {
+  font-size:22px
+}
+p {
+  font-size: 20px;
+}
+
+ul ,ol{
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+}
+
+ input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+/*
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="password"],
+input[type="email"],
+input[type="submit"],
+select {
+  width: 100%;
+  line-height: 40px;
+  height: 22px;
+  padding: 0px 16px;
+  border: 1px solid #e8e8e8;
+  font-family: inherit;
+  font-size: 0.9em;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
+input::placeholder,
+-webkit-input::placeholder,
+-moz-input::placeholder,
+-ms-input::placeholder,
+-moz-input::placeholder {
+  color: rgb(114, 114, 114);
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select:focus {
+  -webkit-box-shadow: 0 0 8px 0 #e9eaec;
+  box-shadow: 0 0 8px 0 #e9eaec;
+}
+
+input[disabled],
+select[disabled] {
+  background-color: rgba(230, 230, 230, 1);
+  border: 1px solid rgba(179, 179, 179, 1);
+  color: rgba(230, 230, 230, 1);
+  cursor: not-allowed;
+}
+ */
  /***** FrameWork *****/
  .mainColor {
     background-color: #314455;
     color: #eee;
  }
 
-
-
  /**** Start Navbar ****/
+nav li {
+  font-size:20px;
+  color:#eee;
+  font-family: "din-arabic-regular";
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
 
+nav .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightPart{
+  width:60%;
+  display: flex;
+  align-items: center;
+}
+
+.brandNameLogo {
+  min-width:112px;
+  max-width: 250px;
+  background-color: rgba(147, 171, 192, 0);
+  height: 100px;
+  padding: 16px 0;
+  margin-left:64px
+}
+
+nav .links {
+width: calc(100% - 250px);
+}
+
+nav .links ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .links ul li{
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+} 
+
+nav .links ul li span{
+  margin-right:16px
+} 
+
+nav .user {
+  font-size:24px
+}
+
+nav .user span{
+  margin-left: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+nav .user span:last-of-type{
+  margin-left: 8px;
+}
+
+nav .links li:hover,nav span:hover{
+  color:#97aabd
+}
+
+.welcome-msg:hover,.user-name:hover{
+  color:#eee;
+  cursor: default;
+}
+
+nav .links .link-menu {
+  position: absolute;
+  top:100%;
+  right:0;
+  width:180px;
+  background-color: #314455;
+  font-size: 16px;
+  padding: 16px 0;
+  display: none;
+}
+
+nav .links .link-menu li{
+  padding:4px 16px;
+}
+
+nav .links .link-menu a{
+  font-size: 16px;
+  color: #eee;
+}
