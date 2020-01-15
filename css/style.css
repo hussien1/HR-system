@@ -487,7 +487,18 @@ nav .links .link-menu a{
 .tableOfContent {
   margin: 16px 0;
 }
-
+/* hussien */
+.tableOfContent table .custom-img img{
+  width: 100px;
+  height: 100px;
+  padding: 4px 4px 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+/* /\/\/\/\/\/\ */
 .tableOfContent table{
   position: relative;
   z-index: 777;
@@ -500,8 +511,9 @@ nav .links .link-menu a{
 .tableOfContent table td,.tableOfContent table th{
   padding:4px 8px;
   width: auto;
+  font-size: 15px; /*hussien*/
+  text-align: center;/*/\/\/\/*/
 }
-
 .tableOfContent table th:first-of-type,.tableOfContent table th:last-of-type {
   width:10px
 }
@@ -551,7 +563,13 @@ nav .links .link-menu a{
 .ellipsisAction {
   padding-right:20px;
 }
-
+.item-action a{
+  margin: 0 2px;
+  color: #212259;
+}
+.item-action a span{
+  margin: 0 2px;
+}
 /**** End Table Of Content Section ****/
 
 /**** Start addNewForm Section ****/

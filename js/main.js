@@ -104,6 +104,64 @@ $(document).ready(function() {
             $(".ellipsisSix").show();
         }
     });
+    // hussien (increase the function to num 15)
+    $('.ellipsisCheck-seven input[type="checkbox"]', ).click(function() {
+        if ($(this).prop("checked") == true) {
+            $(".ellipsisSeven").hide();
+        } else if ($(this).prop("checked") == false) {
+            $(".ellipsisSeven").show();
+        }
+    });
+    $('.ellipsisCheck-eight input[type="checkbox"]', ).click(function() {
+        if ($(this).prop("checked") == true) {
+            $(".ellipsisEight").hide();
+        } else if ($(this).prop("checked") == false) {
+            $(".ellipsisEight").show();
+        }
+    });
+    $('.ellipsisCheck-nine input[type="checkbox"]', ).click(function() {
+        if ($(this).prop("checked") == true) {
+            $(".ellipsisNine").hide();
+        } else if ($(this).prop("checked") == false) {
+            $(".ellipsisNine").show();
+        }
+    });
+    $('.ellipsisCheck-ten input[type="checkbox"]', ).click(function() {
+        if ($(this).prop("checked") == true) {
+            $(".ellipsisTen").hide();
+        } else if ($(this).prop("checked") == false) {
+            $(".ellipsisTen").show();
+        }
+    });
+    $('.ellipsisCheck-eleven input[type="checkbox"]', ).click(function() {
+        if ($(this).prop("checked") == true) {
+            $(".ellipsisEleven").hide();
+        } else if ($(this).prop("checked") == false) {
+            $(".ellipsisEleven").show();
+        }
+    });
+    $('.ellipsisCheck-twelve input[type="checkbox"]', ).click(function() {
+        if ($(this).prop("checked") == true) {
+            $(".ellipsisTwelve").hide();
+        } else if ($(this).prop("checked") == false) {
+            $(".ellipsisTwelve").show();
+        }
+    });
+    $('.ellipsisCheck-thirteen input[type="checkbox"]', ).click(function() {
+        if ($(this).prop("checked") == true) {
+            $(".ellipsisThirteen").hide();
+        } else if ($(this).prop("checked") == false) {
+            $(".ellipsisThirteen").show();
+        }
+    });
+    $('.ellipsisCheck-fourteen input[type="checkbox"]', ).click(function() {
+        if ($(this).prop("checked") == true) {
+            $(".ellipsisFourteen").hide();
+        } else if ($(this).prop("checked") == false) {
+            $(".ellipsisFourteen").show();
+        }
+    });
+    ///\/\//\
 
     $('#toggle').click(function(event) {
         if (this.checked) {
