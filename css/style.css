@@ -616,7 +616,7 @@ nav .links .link-menu a{
   margin-bottom: 16px;
 }
 
-.content form {
+.content .inner {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
