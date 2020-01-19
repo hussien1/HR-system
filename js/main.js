@@ -171,6 +171,11 @@ $(document).ready(function() {
         }
     });
 
+    $('.title').on('click', function() {
+        $(this).next(".content").slideToggle();
+        $(this).children("span").toggle();
+    });
+
 });
 
 /* ama ados c */
