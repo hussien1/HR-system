@@ -373,8 +373,9 @@ nav .links .link-menu a{
   padding-bottom: 8px;
 }
 
-.pageName h2{
+.pageName a{
   font-size:24px;
+  color: #314455;
 }
 
 .searchSpace ,.fillters{
@@ -412,7 +413,7 @@ nav .links .link-menu a{
   cursor: pointer;
 }
 
-.addNewBtn {
+.addNewBtn{
   position: relative;
   z-index: 888;
   min-width: 105px;
@@ -422,7 +423,6 @@ nav .links .link-menu a{
   line-height: 1em;
   font-size: 18px;
   background-color: #314455; 
-  color:#eee;
   border: 2px solid #314455;
   cursor: pointer;
   padding-top: 13px;
@@ -436,7 +436,10 @@ nav .links .link-menu a{
   -moz-border-radius:4px;
   -ms-border-radius:4px;
   -o-border-radius:4px;
+}
 
+.addNewBtn a {
+  color:#eee
 }
 
 .fillters {
@@ -586,15 +589,22 @@ nav .links .link-menu a{
   background-color: #eee;
 }
 
-.title {
+.title ,.hint{
   background-color: #fff;
   padding:4px 16px;
   margin-bottom: 16px;
   display: flex;
   align-items: center;
-  cursor: pointer;
   position: relative;
   z-index: 888;
+}
+
+.title {
+  cursor: pointer;
+}
+
+.hint h3{
+  font-size: 16px;
 }
 
 .title span{
