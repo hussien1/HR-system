@@ -366,7 +366,7 @@ nav .links .link-menu a{
 }
 
 .headOfSubNav {
-  margin-bottom:4px;
+  margin-bottom:16px;
 }
 
 .pageName {
@@ -382,6 +382,10 @@ nav .links .link-menu a{
   width:35%;
 }
 
+.searchInput {
+  position: relative;
+  z-index: 888;
+}
 
 .searchInput input{
   height: 34px;
@@ -394,6 +398,7 @@ nav .links .link-menu a{
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
+  
 }
 
 
@@ -411,21 +416,21 @@ nav .links .link-menu a{
   padding:8px;
   border-radius: 50%;
   cursor: pointer;
+  z-index: 888;
 }
 
-.addNewBtn{
+.addNewBtn a{
   position: relative;
   z-index: 888;
-  min-width: 105px;
   text-align: center;
-  padding: 16px 8px;
+  padding:8px;
   font-weight: bold;
   line-height: 1em;
   font-size: 18px;
   background-color: #314455; 
   border: 2px solid #314455;
   cursor: pointer;
-  padding-top: 13px;
+  color:#eee;
   transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -438,9 +443,6 @@ nav .links .link-menu a{
   -o-border-radius:4px;
 }
 
-.addNewBtn a {
-  color:#eee
-}
 
 .fillters {
   display: flex;
