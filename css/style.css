@@ -452,7 +452,7 @@ nav .links .link-menu a{
   margin:0 8px;
   cursor: pointer;
   position: relative;
-  z-index: 888;
+  z-index: 999;
 }
 
 .fillter-icon ,.choose-icon{
