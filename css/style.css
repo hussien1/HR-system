@@ -436,7 +436,6 @@ nav .links .link-menu a{
   -moz-border-radius:4px;
   -ms-border-radius:4px;
   -o-border-radius:4px;
-
 }
 
 .fillters {
@@ -512,7 +511,7 @@ nav .links .link-menu a{
 .tableOfContent table td,.tableOfContent table th{
   padding:4px 8px;
   width: auto;
-  font-size: 15px; /*hussien*/
+  font-size: 14px; /*hussien*/
   text-align: center;/*/\/\/\/*/
 }
 .tableOfContent table th:first-of-type,.tableOfContent table th:last-of-type {
@@ -547,6 +546,7 @@ nav .links .link-menu a{
   font-size: 16px;
   display: none;
   margin-top: 4px;
+  z-index: 999;
 }
 
 .ellipsisMenu li{
