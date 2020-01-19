@@ -175,6 +175,13 @@ select {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   outline: none;
+  position: relative;
+  z-index: 777;
+}
+
+textarea {
+  position: relative;
+  z-index: 777;
 }
 
 input::placeholder,
@@ -581,11 +588,12 @@ nav .links .link-menu a{
 .title span{
   margin-right: 8px;
   font-size: 1.2em;
-  transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
+  color:#314455;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
 
 .content {
@@ -617,6 +625,8 @@ nav .links .link-menu a{
 .input input{
   padding-left:4px;
   height:35px;
+  position: relative;
+  z-index: 777;
 }
 
 .inputContainer a{
@@ -687,6 +697,8 @@ nav .links .link-menu a{
   display: flex;
   align-items: center;
   cursor: pointer;
+  position: relative;
+  z-index: 777;
 }
 .personnelAction input{
   line-height: normal;

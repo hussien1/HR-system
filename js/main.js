@@ -173,7 +173,7 @@ $(document).ready(function() {
 
     $('.title').on('click', function() {
         $(this).next(".content").slideToggle();
-        $(this).children("span").toggle();
+        $(this).children("span").toggleClass("rotate180");
     });
 
 });

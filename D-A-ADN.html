@@ -153,20 +153,20 @@
             <div class="inner">
                 <div class="headOfSubNav">
                     <div class="pageName">
-                        <h2>Personnel</h2>
+                        <h2></h2>
                     </div>
                     <div class="searchSpace">
                         <div class="searchInput">
-                            <input type="text" placeholder="Search">
-                            <span class="search-btn"><i class="fas fa-search"></i></span>
+                            <!-- <input type="text" placeholder="Search">
+                            <span class="search-btn"><i class="fas fa-search"></i></span> -->
                         </div>
                     </div>
                 </div>
                 <div class="contentOfSubNav">
-                    <div class="addNewBtn">
+<!--                     <div class="addNewBtn">
                         add new
-                    </div>
-                         <div class="fillters">
+                    </div> -->
+                    <!--      <div class="fillters">
                         <div class="fillter">
                             <div class="fillter-btn">
                                 <span><i class="fas fa-filter"></i></span><span
@@ -197,7 +197,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -205,63 +205,79 @@
     <!-- End Of SubNav ^-->
     <!-- Start form Section -->
     <section class="">
+        <form action="">
         <div class="container-fluid">
             <div class="inner">
-                <div class="bagntion">bagntion</div>
+                <div class="bagntion">area</div>
                 <div class="formSection">
-                    <div class="personnelProfile">
+
+                    <div class="personnelProfile
+                    formPart">
                         <div class="title">
-                            <span><i class="far fa-arrow-alt-circle-down"></i></span>
-                            <h3>personnel Profile</h3>
+                            <h3>
+                            </h3>
                         </div>
                         <div class="content">
-                            <form action="">
+                            <div class="inner">
+
                                 <div class="inputContainer">
-                                    <label for="">Personnel No:</label>
+                                    <label for="">Area Code:</label>
                                     <div class="input">
-                                        <input type="text" placeholder="Type Your Number">
+                                       <input type="text">
                                     </div>
                                 </div>
+
                                 <div class="inputContainer">
-                                    <label for="">Gender:</label>
+                                    <label for="">Area Name:</label>
                                     <div class="input">
-                                        <input type="text" placeholder="">
+                                        <input type="text">
                                     </div>
                                 </div>
+
                                 <div class="inputContainer">
-                                    <label for="">Personnel No:</label>
+                                    <label for="">Parent Area:</label>
                                     <div class="input">
-                                        <input type="text" placeholder="">
+                                        <select name="" id="">
+                                            <option value=""></option>
+                                        </select>
                                     </div>
                                 </div>
+
                                 <div class="inputContainer">
-                                    <label for="">Personnel No:</label>
+                                    <label for="">Remarks:</label>
                                     <div class="input">
-                                        <input type="text" placeholder="">
+                                        <input type="text">
                                     </div>
                                 </div>
-                                <div class="inputContainer">
-                                    <label for="">Personnel No:</label>
-                                    <div class="input">
-                                        <input type="text" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="inputContainer">
-                                    <label for="">Personnel No:</label>
-                                    <div class="input">
-                                        <input type="text" placeholder="">
-                                    </div>
-                                </div>
-                            </form>
+
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="personnelAction formPart">
+
+                        <div class="saveAndNew">
+                            <span><i class="fas fa-newspaper"></i></span>
+                            <input type="submit" value="Save and New">
+                        </div>
+
+                        <div class="ok">
+                            <span><i class="fas fa-check-square"></i></span>
+                            <input type="submit" value="OK">
+                        </div>
+
+                        <div class="cancel">
+                            <span><i class="fas fa-window-close"></i></span>
+                            <input type="submit" value="cancel">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </form>
     </section>
     <!-- End form Section -->
-    <!-- <div class="closeAll"></div> --><!-- This Div For closeing all popups and dropdowns -->
-
+     <div class="closeAll"></div><!-- This Div For closeing all popups and dropdowns -->
     <script src="js/jquery_v3.3.1.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/flatpicker.js"></script>
