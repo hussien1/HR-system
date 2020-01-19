@@ -175,13 +175,11 @@ select {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   outline: none;
-  position: relative;
-  z-index: 777;
 }
 
-textarea {
+textarea,a,button,input,select{
   position: relative;
-  z-index: 777;
+  z-index: 888;
 }
 
 input::placeholder,
@@ -383,10 +381,6 @@ nav .links .link-menu a{
   width:35%;
 }
 
-.searchInput {
-  position: relative;
-  z-index: 888;
-}
 
 .searchInput input{
   height: 34px;
@@ -508,7 +502,7 @@ nav .links .link-menu a{
 /* /\/\/\/\/\/\ */
 .tableOfContent table{
   position: relative;
-  z-index: 777;
+  z-index: 888;
   width:100%;
   height: 100%;
   box-shadow: 0px 0px 3px 0px slategrey;
@@ -598,6 +592,9 @@ nav .links .link-menu a{
   margin-bottom: 16px;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 888;
 }
 
 .title span{
@@ -614,6 +611,11 @@ nav .links .link-menu a{
 .content {
   padding:0 16px;
   margin-bottom: 16px;
+  display: none;
+}
+
+.personnelProfile .content {
+  display: block;
 }
 
 .content .inner {
@@ -634,8 +636,6 @@ nav .links .link-menu a{
 .input input{
   padding-left:4px;
   height:35px;
-  position: relative;
-  z-index: 777;
 }
 
 .inputContainer a{
@@ -707,8 +707,9 @@ nav .links .link-menu a{
   align-items: center;
   cursor: pointer;
   position: relative;
-  z-index: 777;
+  z-index: 888;
 }
+
 .personnelAction input{
   line-height: normal;
   background-color: transparent;
