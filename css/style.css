@@ -201,10 +201,6 @@ select:focus {
   -webkit-box-shadow: 0 0 8px 0 #e9eaec;
   box-shadow: 0 0 8px 0 #e9eaec;
 }
-
-button {
-  cursor: pointer;
-}
 /*
 input[disabled],
 select[disabled] {
@@ -238,18 +234,7 @@ select[disabled] {
   -ms-transform: rotate(180deg);
 }
 
-/**** Start Main Navbar ****/
-  nav .inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .rightPart{
-    width:60%;
-    display: flex;
-    align-items: center;
-  }
+ /**** Start Main Navbar ****/
 
 nav li {
   font-size:20px;
@@ -262,6 +247,17 @@ nav li {
   -o-transition: all 0.3s ease-in-out;
 }
 
+nav .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightPart{
+  width:60%;
+  display: flex;
+  align-items: center;
+}
 
 .brandNameLogo {
   min-width:112px;
@@ -269,7 +265,11 @@ nav li {
   background-color: rgba(147, 171, 192, 0);
   height: 100px;
   padding: 16px 0;
-  margin-right:51px
+  margin-right:64px
+}
+
+nav .links {
+width: calc(100% - 250px);
 }
 
 nav .links ul{
@@ -288,9 +288,9 @@ nav .links ul li{
   z-index: 999;
 } 
 
-nav .links ul li span:nth-of-type(2){
-  margin:0 16px
-}
+nav .links ul li span{
+  margin-right:16px
+} 
 
 nav .user {
   font-size:24px
@@ -494,7 +494,18 @@ nav .links .link-menu a{
 .tableOfContent {
   margin: 16px 0;
 }
-
+/* hussien */
+.tableOfContent table .custom-img img{
+  width: 100px;
+  height: 100px;
+  padding: 4px 4px 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+/* /\/\/\/\/\/\ */
 .tableOfContent table{
   position: relative;
   z-index: 777;
@@ -507,8 +518,9 @@ nav .links .link-menu a{
 .tableOfContent table td,.tableOfContent table th{
   padding:4px 8px;
   width: auto;
+  font-size: 15px; /*hussien*/
+  text-align: center;/*/\/\/\/*/
 }
-
 .tableOfContent table th:first-of-type,.tableOfContent table th:last-of-type {
   width:10px
 }
@@ -558,7 +570,13 @@ nav .links .link-menu a{
 .ellipsisAction {
   padding-right:20px;
 }
-
+.item-action a{
+  margin: 0 2px;
+  color: #212259;
+}
+.item-action a span{
+  margin: 0 2px;
+}
 /**** End Table Of Content Section ****/
 
 /**** Start addNewForm Section ****/
@@ -574,13 +592,10 @@ nav .links .link-menu a{
   background-color: #eee;
 }
 
-.formPart {
-  margin-bottom: 8px;
-}
-
 .title {
   background-color: #fff;
   padding:4px 16px;
+  margin-bottom: 16px;
   display: flex;
   align-items: center;
 }
@@ -599,15 +614,9 @@ nav .links .link-menu a{
 .content {
   padding:0 16px;
   margin-bottom: 16px;
-  display: none;
 }
 
-.personnelProfile .content{
-  display: block;
-}
-
-.content .inner {
-  margin-top: 8px;
+.content form {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -713,3 +722,4 @@ nav .links .link-menu a{
 .personnelAction span{
   margin-right: 8px;
 }
+
