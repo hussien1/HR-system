@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/flatpicker.css">
     <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -26,17 +27,14 @@
                     <div class="links">
                         <ul>
                             <li>
-                                <div class="main-nav-link tapOne">
-                                    <span>Personnel</span><span><i class="fas fa-sort-down"></i></span>
-                                </div>
                                 <div class="link-menu hideOne">
                                     <ol>
-                                        <li><a href="#">department</a></li>
-                                        <li><a href="#">position</a></li>
-                                        <li><a href="#">Personnel</a></li>
-                                        <li><a href="#">resignation</a></li>
-                                        <li><a href="#">issue card</a></li>
-                                        <li><a href="#">document setup</a></li>
+                                        <li><a href="personnel_department_TOC.html">department</a></li>
+                                        <li><a href="personnel_position_TOC.html">position</a></li>
+                                        <li><a href="personnel_personnel_TOC.html">Personnel</a></li>
+                                        <li><a href="personnel_resignation_TOC.html">resignation</a></li>
+                                        <li><a href="personnel_issues_TOC.html">issue card</a></li>
+                                        <li><a href="personnel_DocumentSetup_TOC.html">document setup</a></li>
                                     </ol>
                                 </div>
                             </li>
@@ -163,9 +161,20 @@
                     </div>
                 </div>
                 <div class="contentOfSubNav">
-<!--                     <div class="addNewBtn">
-                        add new
-                    </div> -->
+                    <div class="personnelAction formPart">
+
+                        <div class="saveAndNew addNewBtn">
+                            <input type="submit" value="Save and New">
+                        </div>
+
+                        <div class="ok addNewBtn">
+                            <input type="submit" value="OK">
+                        </div>
+
+                        <div class="cancel addNewBtn">
+                            <input type="submit" value="cancel">
+                        </div>
+                    </div>
                     <!--      <div class="fillters">
                         <div class="fillter">
                             <div class="fillter-btn">
@@ -210,90 +219,85 @@
             <div class="inner">
                 <div class="formSection">
 
-                    <div class="personnelProfile
+                    <div class="
                     formPart">
                         <div class="content">
                             <div class="inner">
+                                <div class="col">
+                                    <div class="inputContainer">
+                                        <label for="">department:</label>
+                                        <div class="input">
+                                            <select name="" id="">
+                                                <option value="">design</option>
+                                                <option value="">hr</option>
+                                            </select>
+                                            
+                                        </div>
+                                    </div>
 
-                                <div class="inputContainer">
-                                    <label for="">department:</label>
-                                    <div class="input">
-                                        <select name="" id="">
-                                            <option value="">design</option>
-                                            <option value="">hr</option>
-                                        </select>
+                                    <div class="inputContainer">
                                         <label for="">Personnel:</label>
                                         <select name="" id="">
                                             <option value="">mahmoud</option>
                                             <option value="">hussin</option>
                                         </select>
                                     </div>
-                                </div>
 
-                                <div class="inputContainer">
-                                    <label for="">Resignation Date:</label>
-                                    <div class="input">
-                                        <input type="date" placeholder="">
+                                    <div class="inputContainer">
+                                        <label for="">Resignation Date:</label>
+                                        <div class="input">
+                                            <input type="date" placeholder="">
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="inputContainer">
-                                    <label for="">Resignation Type:</label>
-                                    <div class="input">
-                                        <select name="" id="">
-                                            <option value="">Quit</option>
-                                            <option value="">dismissed</option>
-                                            <option value="">resign</option>
-                                            <option value="">transfer</option>
-                                            <option value="">retain jop widthout salary</option>
-                                        </select>
+                                </div>
+                                
+
+                                
+                                <div class="col">
+                                    <div class="inputContainer">
+                                        <label for="">Resignation Type:</label>
+                                        <div class="input">
+                                            <select name="" id="">
+                                                <option value="">Quit</option>
+                                                <option value="">dismissed</option>
+                                                <option value="">resign</option>
+                                                <option value="">transfer</option>
+                                                <option value="">retain jop widthout salary</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                </div>
-
-                                <div class="inputContainer">
-                                    <label for="">Reason:</label>
-                                    <div class="input">
-                                        <input type="date" placeholder="">
-                                    </div>
-                                </div>
-
-                                <div class="inputContainer">
-                                    <label for="">Blacklisted:</label>
-                                    <div class="input">
-                                        <select name="" id="">
-                                            <option value="">no</option>
-                                            <option value="">yes</option>
-                                        </select>
+    
+                                    <div class="inputContainer">
+                                        <label for="">Reason:</label>
+                                        <div class="input">
+                                            <input type="text" placeholder="">
+                                        </div>
                                     </div>
                                 </div>
                                 
-                                <div class="inputContainer">
-                                    <label for="">Disable Attendance:</label>
-                                    <div class="input">
-                                        <input type="checkbox" placeholder="">
+                                <div class="col">
+                                    <div class="inputContainer">
+                                        <label for="">Blacklisted:</label>
+                                        <div class="input">
+                                            <select name="" id="">
+                                                <option value="">no</option>
+                                                <option value="">yes</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="inputContainer">
+                                        <label for="">Disable Attendance:</label>
+                                        <div class="input">
+                                            <input type="checkbox" placeholder="">
+                                        </div>
                                     </div>
                                 </div>
+                                
 
                         </div>
                     </div>
-                    </div>
-
-                    <div class="personnelAction formPart">
-
-                        <div class="saveAndNew">
-                            <span><i class="fas fa-newspaper"></i></span>
-                            <input type="submit" value="Save and New">
-                        </div>
-
-                        <div class="ok">
-                            <span><i class="fas fa-check-square"></i></span>
-                            <input type="submit" value="OK">
-                        </div>
-
-                        <div class="cancel">
-                            <span><i class="fas fa-window-close"></i></span>
-                            <input type="submit" value="cancel">
-                        </div>
                     </div>
                 </div>
             </div>
@@ -307,6 +311,7 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/flatpicker.js"></script>
     <script src="js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

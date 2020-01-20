@@ -101,7 +101,8 @@ h1 {
   font-size:32px
 }
 h2 {
-  font-size:26px
+  font-size:26px;
+  font-weight: 400;
 }
 h3 {
   font-size:22px
@@ -229,7 +230,7 @@ select[disabled] {
  /**** Start Main Navbar ****/
 
  nav {
-   padding: 8px 0;
+   padding: 11px 0;
  }
 
 nav li {
@@ -296,7 +297,7 @@ nav .user {
   font-size:16px
 }
 
-nav .user span{
+nav .user span,nav .user button{
   margin-left: 8px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -308,11 +309,19 @@ nav .user span{
   z-index: 999;
 }
 
+nav .user button {
+  border: none;
+  background: none;
+  outline: none;
+  color:#eee;
+  font-size:22px
+}
+
 nav .user span:last-of-type{
   margin-left: 8px;
 }
 
-nav .links li:hover,nav span:hover{
+nav .links li:hover,nav span:hover,nav button:hover{
   color:#97aabd
 }
 
@@ -328,7 +337,7 @@ nav .links .link-menu {
   width:180px;
   background-color: #314455;
   font-size: 16px;
-  margin-top:6px;
+  margin-top:12px;
   display: none;
 }
 
@@ -366,10 +375,7 @@ nav .links .link-menu a{
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.headOfSubNav {
-  margin-bottom:8px;
+  padding-bottom: 16px;
 }
 
 .pageName a{
@@ -431,12 +437,12 @@ nav .links .link-menu a{
 }
 
 .addNewBtn{
+  display: inline-block;
   position: relative;
   z-index: 888;
   text-align: center;
   padding:5px 8px 8px 8px;
   margin-right: 8px;
-  font-weight: bold;
   line-height: 1em;
   font-size: 18px;
   background-color: #314455; 
@@ -455,9 +461,6 @@ nav .links .link-menu a{
   -o-border-radius:4px;
 }
 
-.addNewBtn a{
-  color: #eee;
-}
 .fillters {
   display: flex;
 }
@@ -476,7 +479,7 @@ nav .links .link-menu a{
 
 .filter-menu,.choose-menu{
   position: absolute;
-  top:calc(100% + 21px);
+  top:calc(100% + 30px);
   background-color: #314455;
   font-size: 16px;
   left: 0;
@@ -641,6 +644,9 @@ nav .links .link-menu a{
 .content {
   padding:0 16px;
   margin-bottom: 16px;
+}
+
+.personnelAddNew .content {
   display: none;
 }
 
@@ -821,4 +827,7 @@ nav .links .link-menu a{
   margin-right: 16px;
 }
 
-
+.select2-container--default .select2-selection--single {
+  border:none;
+  border-bottom: 1px solid darkgray;
+}
