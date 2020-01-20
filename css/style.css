@@ -831,3 +831,7 @@ nav .links .link-menu a{
   border:none;
   border-bottom: 1px solid darkgray;
 }
+
+.select2-container {
+  width:100% !important;
+}
