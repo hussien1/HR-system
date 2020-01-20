@@ -665,7 +665,9 @@ nav .links .link-menu a{
 }
 
 .inputContainer label{
-  max-width: 150px;
+  color: #333;
+    font-size: 13px;
+    font-weight: bold;
   width:150px;
 }
 
