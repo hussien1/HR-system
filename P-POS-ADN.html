@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/flatpicker.css">
     <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -20,7 +21,7 @@
             <div class="inner">
                 <div class="rightPart">
                     <div class="brandNameLogo">
-                        <a href=""><img src="assets/img/logo.png" alt="logo" srcset=""></a>
+                        <a href="">Digital Pharoahs</a>
                     </div>
 
                     <div class="links">
@@ -153,7 +154,7 @@
             <div class="inner">
                 <div class="headOfSubNav">
                     <div class="pageName">
-                        <a href="personnel_position_TOC.html">position</a>
+                        <a href="personnel_position_TOC.html">Position</a>
                     </div>
                     <div class="searchSpace">
                         <div class="searchInput">
@@ -163,9 +164,20 @@
                     </div>
                 </div>
                 <div class="contentOfSubNav">
-                    <!-- <div class="addNewBtn">
-                        add new
-                    </div> -->
+                    <div class="personnelAction formPart">
+
+                        <div class="saveAndNew addNewBtn">
+                            <input type="submit" value="Save and New">
+                        </div>
+
+                        <div class="ok addNewBtn">
+                            <input type="submit" value="OK">
+                        </div>
+
+                        <div class="cancel addNewBtn">
+                            <input type="submit" value="cancel">
+                        </div>
+                    </div>
                     <!--      <div class="fillters">
                         <div class="fillter">
                             <div class="fillter-btn">
@@ -200,6 +212,7 @@
                     </div> -->
                 </div>
             </div>
+            </div>
         </div>
     </section>
     <!-- End Of SubNav ^-->
@@ -230,7 +243,7 @@
                                 <div class="inputContainer">
                                     <label for="">Parent Position:</label>
                                     <div class="input">
-                                        <select name="" id="">
+                                        <select name="" id="" multiple>
                                             <option value=""></option>
                                             <option value="">nothing</option>
                                         </select>
@@ -238,24 +251,6 @@
                                 </div>
                         </div>
                     </div>
-                    </div>
-
-                    <div class="personnelAction formPart">
-
-                        <div class="saveAndNew">
-                            <span><i class="fas fa-newspaper"></i></span>
-                            <input type="submit" value="Save and New">
-                        </div>
-
-                        <div class="ok">
-                            <span><i class="fas fa-check-square"></i></span>
-                            <input type="submit" value="OK">
-                        </div>
-
-                        <div class="cancel">
-                            <span><i class="fas fa-window-close"></i></span>
-                            <input type="submit" value="cancel">
-                        </div>
                     </div>
                 </div>
             </div>
@@ -269,6 +264,7 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/flatpicker.js"></script>
     <script src="js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

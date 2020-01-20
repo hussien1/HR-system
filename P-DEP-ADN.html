@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/flatpicker.css">
     <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -20,7 +21,7 @@
             <div class="inner">
                 <div class="rightPart">
                     <div class="brandNameLogo">
-                        <a href=""><img src="assets/img/logo.png" alt="logo" srcset=""></a>
+                        <a href="">Digital Pharoahs</a>
                     </div>
 
                     <div class="links">
@@ -163,6 +164,20 @@
                     </div>
                 </div>
                 <div class="contentOfSubNav">
+                    <div class="personnelAction formPart">
+
+                        <div class="saveAndNew addNewBtn">
+                            <input type="submit" value="Save and New">
+                        </div>
+
+                        <div class="ok addNewBtn">
+                            <input type="submit" value="OK">
+                        </div>
+
+                        <div class="cancel addNewBtn">
+                            <input type="submit" value="cancel">
+                        </div>
+                    </div>
                     <!--      <div class="fillters">
                         <div class="fillter">
                             <div class="fillter-btn">
@@ -229,31 +244,15 @@
                                 <div class="inputContainer">
                                     <label for="">Parent Department:</label>
                                     <div class="input">
-                                        <select name="" id="">
-                                            <option value="">team Department</option>
+                                        <select name="" id="" multiple>
+                                            <option value="">team a</option>
+                                            <option value="">team b</option>
+                                            <option value="">team c</option>
                                         </select>
                                     </div>
                                 </div>
                         </div>
                     </div>
-                    </div>
-
-                    <div class="personnelAction formPart">
-
-                        <div class="saveAndNew">
-                            <span><i class="fas fa-newspaper"></i></span>
-                            <input type="submit" value="Save and New">
-                        </div>
-
-                        <div class="ok">
-                            <span><i class="fas fa-check-square"></i></span>
-                            <input type="submit" value="OK">
-                        </div>
-
-                        <div class="cancel">
-                            <span><i class="fas fa-window-close"></i></span>
-                            <input type="submit" value="cancel">
-                        </div>
                     </div>
                 </div>
             </div>
@@ -261,12 +260,13 @@
     </form>
     </section>
     <!-- End form Section -->
-    <div class="closeAll"></div><!-- This Div For closeing all popups and dropdowns -->
+    <!-- <div class="closeAll"></div> --><!-- This Div For closeing all popups and dropdowns -->
 
     <script src="js/jquery_v3.3.1.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/flatpicker.js"></script>
     <script src="js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

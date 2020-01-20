@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/flatpicker.css">
     <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -20,7 +21,7 @@
             <div class="inner">
                 <div class="rightPart">
                     <div class="brandNameLogo">
-                        <a href=""><img src="assets/img/logo.png" alt="logo" srcset=""></a>
+                        <a href="">Digital Pharoahs</a>
                     </div>
 
                     <div class="links">
@@ -153,7 +154,7 @@
             <div class="inner">
                 <div class="headOfSubNav">
                     <div class="pageName">
-                        <a href="personnel_personnel_TOC.html">Personnel</a>                    
+                        <a href="personnel_personnel_TOC.html">Personnel</a>
                     </div>
                     <div class="searchSpace">
                         <div class="searchInput">
@@ -163,9 +164,20 @@
                     </div>
                 </div>
                 <div class="contentOfSubNav">
-                    <!-- <div class="addNewBtn">
-                        add new
-                    </div> -->
+                    <div class="personnelAction formPart">
+
+                        <div class="saveAndNew addNewBtn">
+                            <input type="submit" value="Save and New">
+                        </div>
+
+                        <div class="ok addNewBtn">
+                            <input type="submit" value="OK">
+                        </div>
+
+                        <div class="cancel addNewBtn">
+                            <input type="submit" value="cancel">
+                        </div>
+                    </div>
                     <!--      <div class="fillters">
                         <div class="fillter">
                             <div class="fillter-btn">
@@ -206,440 +218,476 @@
     <!-- Start form Section -->
     <section class="">
         <form action="">
-        <div class="container-fluid">
-            <div class="inner">
-                <div class="formSection">
+            <div class="container-fluid">
+                <div class="inner">
+                    <div class="formSection">
 
-                    <div class="personnelProfile
+                        <div class="personnelProfile
                     formPart">
-                        <div class="title">
-                            <span><i class="fas fa-arrow-up"></i></span>
-                            <h3>personnel Profile</h3>
-                        </div>
-                        <div class="content">
-                            <div class="inner">
-                                <div class="inputContainer">
-                                    <label for="">first name:</label>
-                                    <div class="input">
-                                        <input type="text" placeholder="Your First Name">
-                                    </div>
-                                </div>
-                                <div class="inputContainer">
-                                    <label for="">last name:</label>
-                                    <div class="input">
-                                        <input type="text" placeholder="Your last Name">
-                                    </div>
-                                </div>
-                                <div class="inputContainer">
-                                    <label for="">position:</label>
-                                    <div class="input">
-                                        <select name="" id="">
-                                            <option value="">team leader</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="inputContainer">
-                                    <label for="">type:</label>
-                                    <div class="input">
-                                        <input type="text" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="inputContainer">
-                                    <label for="">password:</label>
-                                    <div class="input">
-                                        <input type="text" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="inputContainer">
-                                    <label for="">Personnel No.</label>
-                                    <div class="input">
-                                        <input type="text" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="inputContainer">
-                                    <label for="">gender:</label>
-                                    <select name="" id="">
-                                        <option value="">male</option>
-                                        <option value="">female</option>
-                                    </select>
-                                </div>
-                                <div class="inputContainer">
-                                    <label for="">department:</label>
-                                    <select name="" id="">
-                                        <option value="">sales</option>
-                                        <option value="">hr</option>
-                                    </select>
-                                </div>
-                                <div class="inputContainer">
-                                    <label for="">employment type:</label>
-                                    <select name="" id="">
-                                        <option value="">------</option>
-                                    </select>
-                                </div>
-                                <div class="inputContainer">
-                                    <label for="">employment date:</label>
-                                    <div class="input">
-                                        <input type="date" placeholder="15-1-2020">
-                                    </div>
-                                </div>
-                                <div class="inputContainer">
-                                    <label for="">card no.</label>
-                                    <div class="input">
-                                        <input type="date" placeholder="15-1-2020">
-                                    </div>
-                                </div>
-                                <div class="inputContainer">
-                                    <label for="">register fingerprint:</label>
-                                    <a href="" target="_blank">register</a>
-                                    <a href="" target="_blank">need help?</a>
-                                    <a href="" target="_blank">download driver</a>
-                                </div>
-                                <div class="inputContainer personnel-img">
-                                    <div class="img-box">
-                                        <i class="fas fa-user-tie fa-9x"></i>
-                                    </div>
-                                    <p>(optimal size 120 x 140 pixel)</p>
-                                    <button>browse</button>
-                                </div>
-                           
-                        </div>
-                    </div>
-                    </div>
+                            <div class="title">
+                                <span><i class="fas fa-arrow-up"></i></span>
+                                <h3>personnel Profile</h3>
+                            </div>
+                            <div class="content">
+                                <div class="inner">
+                                    <div class="col">
 
-                    <div class="personnelDetails formPart">
-                        <div class="title">
-                            <span><i class="fas fa-arrow-down"></i></span>
-                            <h3>personnel Details</h3>
-                        </div>
-                        <div class="content">
-                            <div class="inner">
-                                <div class="inputContainer">
-                                    <label for="">work address:</label>
-                                    <div class="input">
-                                        <input type="text" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="inputContainer">
-                                    <label for="">home address:</label>
-                                    <div class="input">
-                                        <input type="text" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="inputContainer">
-                                    <label for="">postal code:</label>
-                                    <div class="input">
-                                        <input type="text" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="inputContainer">
-                                    <label for="">socian security number:</label>
-                                    <div class="input">
-                                        <input type="text" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="inputContainer">
-                                    <label for="">office telephone:</label>
-                                    <div class="input">
-                                        <input type="text" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="inputContainer">
-                                    <label for="">home telephone:</label>
-                                    <div class="input">
-                                        <input type="text" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="inputContainer">
-                                    <label for="">mobile telephone:</label>
-                                    <div class="input">
-                                        <input type="text" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="inputContainer">
-                                    <label for="">nickname:</label>
-                                    <div class="input">
-                                        <input type="text" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="inputContainer">
-                                    <label for="">birthday:</label>
-                                    <div class="input">
-                                        <input type="text" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="inputContainer">
-                                    <label for="">ID Number:</label>
-                                    <div class="input">
-                                        <input type="text" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="inputContainer">
-                                    <label for="">email:</label>
-                                    <div class="input">
-                                        <input type="text" placeholder="">
-                                    </div>
-                                </div>           
-                        </div>
-                    </div>
-                    </div>
+                                        <div class="inputContainer">
+                                            <label for="">Personnel No.</label>
+                                            <div class="input">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
 
-                    <div class="explryAlert formPart">
-                        <div class="title">
-                            <span><i class="fas fa-arrow-down"></i></span>
-                            <h3>explry alert</h3>
+                                        <div class="inputContainer">
+                                            <label for="">first name:</label>
+                                            <div class="input">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+
+                                        <div class="inputContainer">
+                                            <label for="">last name:</label>
+                                            <div class="input">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+
+                                        <div class="inputContainer">
+                                            <label for="">position:</label>
+                                            <div class="input">
+                                                <select name="" id="">
+                                                    <option value="">team leader</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="inputContainer">
+                                            <label for="">department:</label>
+                                            <select name="" id="">
+                                                <option value="">sales</option>
+                                                <option value="">hr</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="inputContainer">
+                                            <label for="">card no.</label>
+                                            <div class="input">
+                                                <input type="date" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="inputContainer">
+                                            <label for="">register fingerprint:</label>
+                                            <a href="" target="_blank">register</a>
+                                            <a href="" target="_blank">need help?</a>
+                                            <a href="" target="_blank">download driver</a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="inputContainer">
+                                            <label for="">password:</label>
+                                            <div class="input">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+
+                                        <div class="inputContainer">
+                                            <label for="">type:</label>
+                                            <div class="input">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+
+                                        <div class="inputContainer">
+                                            <label for="">gender:</label>
+                                            <select name="" id="">
+                                                <option value="">male</option>
+                                                <option value="">female</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="inputContainer">
+                                            <label for="">employment type:</label>
+                                            <select name="" id="">
+                                                <option value="">------</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="inputContainer">
+                                            <label for="">employment date:</label>
+                                            <div class="input">
+                                                <input type="date" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+
+                                        <div class="inputContainer personnel-img">
+                                            <div class="img-box">
+                                                <i class="fas fa-user-tie fa-9x"></i>
+                                            </div>
+                                            <p>(optimal size 120 x 140 pixel)</p>
+                                            <button>browse</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-<!--                         <div class="content">
+
+                        <div class="personnelDetails formPart">
+                            <div class="title">
+                                <span><i class="fas fa-arrow-down"></i></span>
+                                <h3>personnel Details</h3>
+                            </div>
+                            <div class="content">
+                                <div class="inner">
+                                    <div class="col">
+                                        <div class="inputContainer">
+                                            <label for="">work address:</label>
+                                            <div class="input">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="inputContainer">
+                                            <label for="">home address:</label>
+                                            <div class="input">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="inputContainer">
+                                            <label for="">postal code:</label>
+                                            <div class="input">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="inputContainer">
+                                            <label for="">socian security number:</label>
+                                            <div class="input">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="inputContainer">
+                                            <label for="">office telephone:</label>
+                                            <div class="input">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="inputContainer">
+                                            <label for="">home telephone:</label>
+                                            <div class="input">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="inputContainer">
+                                            <label for="">mobile telephone:</label>
+                                            <div class="input">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+
+                                        <div class="inputContainer">
+                                            <label for="">ID Number:</label>
+                                            <div class="input">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="inputContainer">
+                                            <label for="">nickname:</label>
+                                            <div class="input">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="inputContainer">
+                                            <label for="">birthday:</label>
+                                            <div class="input">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="inputContainer">
+                                            <label for="">email:</label>
+                                            <div class="input">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="explryAlert formPart">
+                            <div class="title">
+                                <span><i class="fas fa-arrow-down"></i></span>
+                                <h3>explry alert</h3>
+                            </div>
+                            <!--                         <div class="content">
                             <div class="inner">
 
                         </div>
                     </div> -->
-                    </div>
-
-                    <div class="attendanceSettings formPart">
-                        <div class="title">
-                            <span><i class="fas fa-arrow-down"></i></span>
-                            <h3>attendance Settings</h3>
                         </div>
-                        <div class="content">
-                            <div class="inner">
-                                <div class="inputContainer">
-                                    <label for="">area:</label>
-                                    <div class="areaBox">
-                                        <div class="subArea">
-                                            <input type="checkbox"><label for="">include sub-Area</label>
+
+                        <div class="attendanceSettings formPart">
+                            <div class="title">
+                                <span><i class="fas fa-arrow-down"></i></span>
+                                <h3>attendance Settings</h3>
+                            </div>
+                            <div class="content">
+                                <div class="inner">
+                                    <div class="col">
+                                        <div class="inputContainer">
+                                            <label for="">area:</label>
+                                            <div class="areaBox">
+                                                <div class="subArea">
+                                                    <input type="checkbox"><label for="">include sub-Area</label>
+                                                </div>
+                                                <div class="areas">
+                                                    <div class="areaName">
+                                                        <input type="checkbox"><label for="">1 area name</label>
+                                                    </div>
+                                                    <div class="areaName">
+                                                        <input type="checkbox"><label for="">1 area name</label>
+                                                    </div>
+                                                    <div class="areaName">
+                                                        <input type="checkbox"><label for="">1 area name</label>
+                                                    </div>
+                                                    <div class="areaName">
+                                                        <input type="checkbox"><label for="">1 area name</label>
+                                                    </div>
+                                                    <div class="areaName">
+                                                        <input type="checkbox"><label for="">1 area name</label>
+                                                    </div>
+                                                    <div class="areaName">
+                                                        <input type="checkbox"><label for="">1 area name</label>
+                                                    </div>
+                                                    <div class="areaName">
+                                                        <input type="checkbox"><label for="">1 area name</label>
+                                                    </div>
+                                                    <div class="areaName">
+                                                        <input type="checkbox"><label for="">1 area name</label>
+                                                    </div>
+                                                    <div class="areaName">
+                                                        <input type="checkbox"><label for="">1 area name</label>
+                                                    </div>
+                                                    <div class="areaName">
+                                                        <input type="checkbox"><label for="">1 area name</label>
+                                                    </div>
+                                                    <div class="areaName">
+                                                        <input type="checkbox"><label for="">1 area name</label>
+                                                    </div>
+                                                    <div class="areaName">
+                                                        <input type="checkbox"><label for="">1 area name</label>
+                                                    </div>
+                                                    <div class="areaName">
+                                                        <input type="checkbox"><label for="">1 area name</label>
+                                                    </div>
+                                                    <div class="areaName">
+                                                        <input type="checkbox"><label for="">1 area name</label>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="areas">
-                                            <div class="areaName">
-                                                <input type="checkbox"><label for="">1 area name</label>
+                                    </div>
+                                    <div class="col">
+                                        <div class="inputContainer">
+                                            <label for="">self password:</label>
+                                            <div class="input">
+                                                <input type="text" placeholder="">
                                             </div>
-                                            <div class="areaName">
-                                                <input type="checkbox"><label for="">1 area name</label>
-                                            </div>
-                                            <div class="areaName">
-                                                <input type="checkbox"><label for="">1 area name</label>
-                                            </div>
-                                            <div class="areaName">
-                                                <input type="checkbox"><label for="">1 area name</label>
-                                            </div>
-                                            <div class="areaName">
-                                                <input type="checkbox"><label for="">1 area name</label>
-                                            </div>
-                                            <div class="areaName">
-                                                <input type="checkbox"><label for="">1 area name</label>
-                                            </div>
-                                            <div class="areaName">
-                                                <input type="checkbox"><label for="">1 area name</label>
-                                            </div>
-                                            <div class="areaName">
-                                                <input type="checkbox"><label for="">1 area name</label>
-                                            </div>
-                                            <div class="areaName">
-                                                <input type="checkbox"><label for="">1 area name</label>
-                                            </div>
-                                            <div class="areaName">
-                                                <input type="checkbox"><label for="">1 area name</label>
-                                            </div>
-                                            <div class="areaName">
-                                                <input type="checkbox"><label for="">1 area name</label>
-                                            </div>
-                                            <div class="areaName">
-                                                <input type="checkbox"><label for="">1 area name</label>
-                                            </div>
-                                            <div class="areaName">
-                                                <input type="checkbox"><label for="">1 area name</label>
-                                            </div>
-                                            <div class="areaName">
-                                                <input type="checkbox"><label for="">1 area name</label>
+                                        </div>
+                                        <div class="inputContainer">
+                                            <label for="">enable attendance function:</label>
+                                            <div class="input">
+                                                <select name="" id="">
+                                                    <option value="">yes</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="inputContainer">
-                                    <label for="">self password:</label>
-                                    <div class="input">
-                                        <input type="text" placeholder="">
+                                    <div class="col">
+                                        <div class="inputContainer">
+                                            <label for="">device privilege:</label>
+                                            <div class="input">
+                                                <select name="" id="">
+                                                    <option value="">employee</option>
+                                                </select>
+                                            </div>
+                                        </div>
                                     </div>
+
+
                                 </div>
-                                <div class="inputContainer">
-                                    <label for="">enable attendance function:</label>
-                                    <div class="input">
-                                        <select name="" id="">
-                                            <option value="">yes</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="inputContainer">
-                                    <label for="">device privilege:</label>
-                                    <div class="input">
-                                        <select name="" id="">
-                                            <option value="">employee</option>
-                                        </select>
-                                    </div>
-                                </div>
+                            </div>
                         </div>
+
+                        <div class="accessControlSettings formPart">
+                            <div class="title">
+                                <span><i class="fas fa-arrow-down"></i></span>
+                                <h3>access Control Settings</h3>
+                            </div>
+                            <div class="content">
+                                <div class="inner">
+
+                                    <div class="col">
+                                        <div class="inputContainer">
+                                            <label for="">access group:</label>
+                                            <div class="input">
+                                                <select name="" id="">
+                                                    <option value="">
+                                                        1 default access group
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="inputContainer">
+                                            <label for="">authentication method:</label>
+                                            <div class="input">
+                                                <select name="" id="">
+                                                    <option value="">
+                                                        apply group mode
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="inputContainer">
+                                            <label for="">apply group tomezones:</label>
+                                            <div class="input">
+                                                <select name="" id="">
+                                                    <option value="">
+                                                        yes
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="inputContainer">
+                                            <label for="">access time zones:</label>
+                                            <span>01 00 00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="payrollSetting formPart">
+                            <div class="title">
+                                <span><i class="fas fa-arrow-down"></i></span>
+                                <h3>payroll Setting</h3>
+                            </div>
+                            <div class="content">
+                                <div class="inner">
+
+                                    <div class="col">
+
+                                        <div class="inputContainer">
+                                            <label for="">bank name:</label>
+                                            <div class="input">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="inputContainer">
+                                            <label for="">bank account:</label>
+                                            <div class="input">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="inputContainer">
+                                            <label for="">basic salary:</label>
+                                            <div class="input">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="inputContainer">
+                                            <label for="">account number:</label>
+                                            <div class="input">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="inputContainer">
+                                            <label for="">person ID:</label>
+                                            <div class="input">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="inputContainer">
+                                            <label for="">agent ID:</label>
+                                            <div class="input">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mobileAppSetting formPart">
+                            <div class="title">
+                                <span><i class="fas fa-arrow-down"></i></span>
+                                <h3>mobile App Setting</h3>
+                            </div>
+                            <div class="content">
+                                <div class="inner">
+                                    <div class="col">
+                                        <div class="inputContainer">
+                                            <label for="">APP status:</label>
+                                            <div class="input">
+                                                <select name="" id="">
+                                                    <option value="">
+                                                        disable
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="inputContainer">
+                                            <label for="">APP role:</label>
+                                            <div class="input">
+                                                <select name="" id="">
+                                                    <option value="">
+                                                        employee
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
                     </div>
-                    </div>
-
-                    <div class="accessControlSettings formPart">
-                        <div class="title">
-                            <span><i class="fas fa-arrow-down"></i></span>
-                            <h3>access Control Settings</h3>
-                        </div>
-                        <div class="content">
-                            <div class="inner">
-
-                                <div class="inputContainer">
-                                    <label for="">access group:</label>
-                                    <div class="input">
-                                        <select name="" id="">
-                                            <option value="">
-                                                1 default access group
-                                            </option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="inputContainer">
-                                    <label for="">authentication method:</label>
-                                    <div class="input">
-                                        <select name="" id="">
-                                            <option value="">
-                                                apply group mode
-                                            </option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="inputContainer">
-                                    <label for="">apply group tomezones:</label>
-                                    <div class="input">
-                                        <select name="" id="">
-                                            <option value="">
-                                                yes
-                                            </option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="inputContainer">
-                                    <label for="">access time zones:</label>
-                                    <span>01 00 00</span>
-                                </div>
-
-                        </div>
-                    </div>
-                    </div>
-
-                    <div class="payrollSetting formPart">
-                        <div class="title">
-                            <span><i class="fas fa-arrow-down"></i></span>
-                            <h3>payroll Setting</h3>
-                        </div>
-                        <div class="content">
-                            <div class="inner">
-
-                                <div class="inputContainer">
-                                    <label for="">basic salary:</label>
-                                    <div class="input">
-                                        <input type="text">
-                                    </div>
-                                </div>
-
-                                <div class="inputContainer">
-                                    <label for="">bank name:</label>
-                                    <div class="input">
-                                        <input type="text">
-                                    </div>
-                                </div>
-
-                                <div class="inputContainer">
-                                    <label for="">bank account:</label>
-                                    <div class="input">
-                                        <input type="text">
-                                    </div>
-                                </div>
-
-                                <div class="inputContainer">
-                                    <label for="">person ID:</label>
-                                    <div class="input">
-                                        <input type="text">
-                                    </div>
-                                </div>
-
-                                <div class="inputContainer">
-                                    <label for="">agent ID:</label>
-                                    <div class="input">
-                                        <input type="text">
-                                    </div>
-                                </div>
-
-                                <div class="inputContainer">
-                                    <label for="">account number:</label>
-                                    <div class="input">
-                                        <input type="text">
-                                    </div>
-                                </div>
-
-                        </div>
-                    </div>
-                    </div>
-
-                    <div class="mobileAppSetting formPart">
-                        <div class="title">
-                            <span><i class="fas fa-arrow-down"></i></span>
-                            <h3>mobile App Setting</h3>
-                        </div>
-                        <div class="content">
-                            <div class="inner">
-
-                                <div class="inputContainer">
-                                    <label for="">APP status:</label>
-                                    <div class="input">
-                                        <select name="" id="">
-                                            <option value="">
-                                                disable
-                                            </option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="inputContainer">
-                                    <label for="">APP role:</label>
-                                    <div class="input">
-                                        <select name="" id="">
-                                            <option value="">
-                                                employee
-                                            </option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                        </div>
-                    </div>
-                    </div>
-
-                    <div class="personnelAction formPart">
-
-                        <div class="saveAndNew">
-                            <span><i class="fas fa-newspaper"></i></span>
-                            <input type="submit" value="Save and New">
-                        </div>
-
-                        <div class="ok">
-                            <span><i class="fas fa-check-square"></i></span>
-                            <input type="submit" value="OK">
-                        </div>
-
-                        <div class="cancel">
-                            <span><i class="fas fa-window-close"></i></span>
-                            <input type="submit" value="cancel">
-                        </div>
-                    </div>
-
                 </div>
             </div>
-        </div>
-    </form>
+        </form>
     </section>
     <!-- End form Section -->
     <div class="closeAll"></div><!-- This Div For closeing all popups and dropdowns -->
@@ -648,6 +696,7 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/flatpicker.js"></script>
     <script src="js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

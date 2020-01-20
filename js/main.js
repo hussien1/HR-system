@@ -176,6 +176,9 @@ $(document).ready(function() {
         $(this).children("span").toggleClass("rotate180");
     });
 
+    $("select").select2({
+/*         maximumSelectionLength: 2
+ */      });
 });
 
 /* ama ados c */
