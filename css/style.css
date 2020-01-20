@@ -356,7 +356,6 @@ nav .links .link-menu a{
   background-color: #fff;
   color:#314455;
   border-bottom: 1px solid darkgray;
-  margin-bottom: 16px;
 }
 
 .subNav .inner {
@@ -503,9 +502,9 @@ nav .links .link-menu a{
 
 /**** Start Table Of Content Section ****/
 
-.tableOfContent {
+/* .tableOfContent {
   margin: 16px 0;
-}
+} */
 /* hussien */
 .tableOfContent table .custom-img img{
   width: 100px;
