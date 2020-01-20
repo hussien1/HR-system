@@ -15,8 +15,7 @@ html {
 
 body {
   margin: 0;
-  font-family:  'din-arabic-light', sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -24,27 +23,6 @@ body {
   text-align: left;
   background-color: #fff;
   text-transform: capitalize;
-}
-
-@font-face {
-  font-family: 'din-arabic-light';
-  src: url('../assets/font/DINNEXTLTARABIC-LIGHT-1.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'din-arabic-regular';
-  src: url('../assets/font/DINNextLTArabic-Regular-4.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'din-arabic-bold';
-  src: url('../assets/font/DINNextLTArabic-Bold-3.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
 }
 
  .container {
@@ -115,12 +93,8 @@ body {
 }
 a {
   font-size:16px;
-  font-family: "din-arabic-bold";
-  text-decoration: none;
-}
 
-h1,h2,h3,h4,h5,h6,p {
-  font-family: "din-arabic-regular";
+  text-decoration: none;
 }
 
 h1 {
@@ -175,9 +149,10 @@ select {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   outline: none;
+  background-color: transparent;
 }
 
-textarea,a,button,input,select{
+a,button,.input{
   position: relative;
   z-index: 888;
 }
@@ -198,6 +173,25 @@ input[type="email"]:focus,
 select:focus {
   -webkit-box-shadow: 0 0 8px 0 #e9eaec;
   box-shadow: 0 0 8px 0 #e9eaec;
+}
+
+.select2-container--default .select2-selection--multiple {
+  background: transparent;
+  border: none;
+  border-bottom:1px solid darkgray ;
+  line-height: 40px;
+  height: 22px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+  height: 24px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+  margin:3px 8px;
+}
+
+.select2-container--default .select2-selection--multiple:focus{
+  border: none;
+  border-bottom:1px solid darkgray ;
 }
 /*
 input[disabled],
@@ -234,10 +228,13 @@ select[disabled] {
 
  /**** Start Main Navbar ****/
 
+ nav {
+   padding: 8px 0;
+ }
+
 nav li {
-  font-size:20px;
+  font-size:16px;
   color:#eee;
-  font-family: "din-arabic-regular";
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -258,16 +255,14 @@ nav .inner {
 }
 
 .brandNameLogo {
-  min-width:112px;
-  max-width: 250px;
   background-color: rgba(147, 171, 192, 0);
-  height: 100px;
-  padding: 16px 0;
-  margin-right:64px
+  margin-right:16px
 }
 
-nav .links {
-width: calc(100% - 250px);
+.brandNameLogo a{
+  color:#eee;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 nav .links ul{
@@ -276,6 +271,8 @@ nav .links ul{
 }
 
 nav .links ul li{
+  display: flex;
+  align-items: center;
   position: relative;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -286,12 +283,17 @@ nav .links ul li{
   z-index: 999;
 } 
 
+.main-nav-link {
+  display: flex;
+  align-items: center;
+} 
+
 nav .links ul li span{
-  margin-right:16px
+  margin-right:16px;
 } 
 
 nav .user {
-  font-size:24px
+  font-size:16px
 }
 
 nav .user span{
@@ -326,7 +328,7 @@ nav .links .link-menu {
   width:180px;
   background-color: #314455;
   font-size: 16px;
-  margin-top:34px;
+  margin-top:6px;
   display: none;
 }
 
@@ -353,6 +355,8 @@ nav .links .link-menu a{
 .subNav {
   background-color: #fff;
   color:#314455;
+  border-bottom: 1px solid darkgray;
+  margin-bottom: 16px;
 }
 
 .subNav .inner {
@@ -366,11 +370,19 @@ nav .links .link-menu a{
 }
 
 .headOfSubNav {
-  margin-bottom:16px;
+  margin-bottom:8px;
 }
 
-.pageName {
-  padding-bottom: 8px;
+.pageName a{
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.pageName:hover a{
+  opacity: 0.7;
 }
 
 .pageName a{
@@ -419,11 +431,12 @@ nav .links .link-menu a{
   z-index: 888;
 }
 
-.addNewBtn a{
+.addNewBtn{
   position: relative;
   z-index: 888;
   text-align: center;
   padding:5px 8px 8px 8px;
+  margin-right: 8px;
   font-weight: bold;
   line-height: 1em;
   font-size: 18px;
@@ -589,7 +602,9 @@ nav .links .link-menu a{
 
 .formSection {
   padding: 16px;
-  background-color: #eee;
+  box-shadow: 0 5px 20px -15px black;
+  border: 1px solid #ced4da;
+  background: #fff;
 }
 
 .title ,.hint{
@@ -627,29 +642,46 @@ nav .links .link-menu a{
   display: none;
 }
 
-.personnelProfile .content {
-  display: block;
-}
-
 .content .inner {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
+
+
+
+.content .col{
+  margin-right: 16px;
+  width:32%
+}
+
 
 .inputContainer {
-  width:30%;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 888;
 }
 
-.input{
+.inputContainer label{
+  max-width: 150px;
+  width:150px;
+}
+
+.input {
   margin-top:4px;
+  width:calc(100% - 150px)
 }
 
 .input input{
   padding-left:4px;
   height:35px;
+  border: none;
+  border-bottom: 1px solid darkgray;
+  padding: 0;
 }
+
 
 .inputContainer a{
   margin-right: 8px;
@@ -665,14 +697,6 @@ nav .links .link-menu a{
   align-items: center;
   color:#ddd;
   border-radius: 4px;
-}
-
-.personnel-img{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: auto;
-  font-weight: bold;
 }
 
 .personnel-img p {
@@ -712,16 +736,17 @@ nav .links .link-menu a{
 
 .personnelAction {
   display: flex;
-  padding: 16px 0;
-  border-top: 1.5px dotted #ddd;
 }
+
 .personnelAction .saveAndNew ,.personnelAction .ok ,.personnelAction .cancel {
   display: flex;
   align-items: center;
   cursor: pointer;
   position: relative;
   z-index: 888;
+  color: #eee;
 }
+
 
 .personnelAction input{
   line-height: normal;
@@ -729,11 +754,29 @@ nav .links .link-menu a{
   border: none;
   outline: transparent;
   padding: 0px;
-  margin-right: 16px;
   cursor: pointer;
+  color: #eee;
 }
 
 .personnelAction span{
   margin-right: 8px;
 }
+
+.personnelProfile .personnel-img{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  width:50%;
+  margin:auto ;
+}
+
+.mobileAppSetting .inner {
+  justify-content: flex-start;
+}
+
+.mobileAppSetting .inner .col{
+  margin-right: 16px;
+}
+
 

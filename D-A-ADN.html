@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/flatpicker.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/jquery-ui.min.css" />
+
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 
 <body>
@@ -153,7 +156,7 @@
             <div class="inner">
                 <div class="headOfSubNav">
                     <div class="pageName">
-                        <h2></h2>
+                        <a href="device_area_TOC.html">area</a>
                     </div>
                     <div class="searchSpace">
                         <div class="searchInput">
@@ -208,15 +211,10 @@
         <form action="">
         <div class="container-fluid">
             <div class="inner">
-                <div class="bagntion">area</div>
                 <div class="formSection">
 
                     <div class="personnelProfile
                     formPart">
-                        <div class="title">
-                            <h3>
-                            </h3>
-                        </div>
                         <div class="content">
                             <div class="inner">
 
@@ -237,9 +235,10 @@
                                 <div class="inputContainer">
                                     <label for="">Parent Area:</label>
                                     <div class="input">
-                                        <select name="" id="">
-                                            <option value=""></option>
-                                        </select>
+                                        <select class="test" name="states[]" multiple="multiple">
+                                            <option value="AL">Alabama</option>
+                                            <option value="WY">Wyoming</option>
+                                          </select>
                                     </div>
                                 </div>
 
@@ -278,11 +277,12 @@
     </section>
     <!-- End form Section -->
      <div class="closeAll"></div><!-- This Div For closeing all popups and dropdowns -->
+     
     <script src="js/jquery_v3.3.1.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/flatpicker.js"></script>
     <script src="js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
     <script src="js/main.js"></script>
 </body>
-
 </html>
