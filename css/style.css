@@ -455,7 +455,9 @@ nav .links .link-menu a{
   -o-border-radius:4px;
 }
 
-
+.addNewBtn a{
+  color: #eee;
+}
 .fillters {
   display: flex;
 }
