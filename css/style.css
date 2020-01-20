@@ -652,7 +652,7 @@ nav .links .link-menu a{
 
 .content .col{
   margin-right: 16px;
-  width:32%
+  width:48%
 }
 
 
@@ -763,6 +763,15 @@ nav .links .link-menu a{
 .personnelAction span{
   margin-right: 8px;
 }
+
+.personnelProfile .content{
+  display: block;
+}
+
+.personnelProfile .col{
+  width:32%
+}
+
 /* popups style */
 .popups{
   top: 0;
