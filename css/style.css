@@ -356,7 +356,6 @@ nav .links .link-menu a{
   background-color: #fff;
   color:#314455;
   border-bottom: 1px solid darkgray;
-  margin-bottom: 16px;
 }
 
 .subNav .inner {
@@ -601,6 +600,7 @@ nav .links .link-menu a{
 }
 
 .formSection {
+  margin-top: 16px;
   padding: 16px;
   box-shadow: 0 5px 20px -15px black;
   border: 1px solid #ced4da;
@@ -799,7 +799,7 @@ nav .links .link-menu a{
   align-items: center;
   font-weight: bold;
   width:50%;
-  margin:auto ;
+  margin:auto;
 }
 
 .mobileAppSetting .inner {
