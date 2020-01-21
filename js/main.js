@@ -1,7 +1,7 @@
 $(document).ready(function() {
     /* For Closing any pop up and dropDown */
     $('.closeAll').on('click', function() {
-        $(".hideOne,.hideTwo,.hideThree,.hideFour,.hideFive,.hideSix,.choose-menu,.filter-menu,.ellipsisMenu").slideUp();
+        $(".hideOne,.hideTwo,.hideThree,.hideFour,.hideFive,.hideSix,.choose-menu,.filter-menu,.ellipsisMenu.select2-results").slideUp();
     });
     
     $('.tapOne').on('click', function() {
@@ -46,7 +46,7 @@ $(document).ready(function() {
         $(".filter-menu").slideUp();
     });
 
-    $("tr:odd").css("background-color", "rgba(49, 68, 85, 0.1)");
+    
 
     $('.sorts').on('click', function() {
         $(this).toggleClass('rotate180');
@@ -161,7 +161,6 @@ $(document).ready(function() {
             $(".ellipsisFourteen").show();
         }
     });
-    ///\/\//\
 
     $('#toggle').click(function(event) {
         if (this.checked) {
@@ -176,9 +175,9 @@ $(document).ready(function() {
         $(this).children("span").toggleClass("rotate180");
     });
 
-    $("select").select2({
-/*         maximumSelectionLength: 2
- */      });
+    $('select').select2({
+        
+    });
+
 });
 
-/* ama ados c */

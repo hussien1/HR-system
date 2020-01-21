@@ -507,10 +507,6 @@ nav .links .link-menu a{
 
 /**** Start Table Of Content Section ****/
 
-/* .tableOfContent {
-  margin: 16px 0;
-} */
-/* hussien */
 .tableOfContent table .custom-img img{
   width: 100px;
   height: 100px;
@@ -521,8 +517,8 @@ nav .links .link-menu a{
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-/* /\/\/\/\/\/\ */
-.tableOfContent table{
+
+.tableOfContent table,table{
   position: relative;
   z-index: 888;
   width:100%;
@@ -531,11 +527,19 @@ nav .links .link-menu a{
   border-collapse:collapse
 }
 
+.tableOfContent tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.tableOfContent thead {
+  background-color: #f2f2f2;
+}
+
 .tableOfContent table td,.tableOfContent table th{
   padding:4px 8px;
   width: auto;
-  font-size: 14px; /*hussien*/
-  text-align: center;/*/\/\/\/*/
+  font-size: 14px;
+  text-align: center;
 }
 .tableOfContent table th:first-of-type,.tableOfContent table th:last-of-type {
   width:10px
@@ -660,6 +664,7 @@ nav .links .link-menu a{
 
 .content .col{
   margin-right: 16px;
+  margin-bottom: 16px;
   width:48%
 }
 
@@ -834,4 +839,22 @@ nav .links .link-menu a{
 
 .select2-container {
   width:100% !important;
+}
+
+.setDepartment table,.setPosition table{
+  background-color: rgba(240, 231, 231, 0.274);
+  height:auto;
+}
+
+.setDepartment table td:first-of-type,.setPosition table td:first-of-type{
+  padding-left:8px
+}
+.setDepartment table th:first-of-type,.setPosition table th:first-of-type{
+  padding-left:8px
+}
+
+.setDepartment table,.setPosition table {
+  background-color: rgba(240, 231, 231, 0.274);
+  height:auto;
+
 }
