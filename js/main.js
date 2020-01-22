@@ -178,6 +178,24 @@ $(document).ready(function() {
     $('select').select2({
         
     });
-
+    // popups show functions
+    $(".fa-cogs").on("click",function(){ 
+        $(".popups,#settingsPopup").css("display","flex");
+        $("body").css("overflow","hidden");
+        $("html").css("overflow","hidden")
+    })
+    $(".fa-user-tie").on("click",function(){
+        $(".popups,#passPopup").css("display","flex");
+        $("body").css("overflow","hidden");
+        $("html").css("overflow","hidden")
+    })
+    $(".fa-exclamation-circle").on("click",function(){
+        $(".popups,#aboutPopup").css("display","flex");
+        $("body").css("overflow","hidden");
+        $("html").css("overflow","hidden")
+    })
+    $(".closePopup,.cancelPopup").on("click",function(){
+        $(".popups,.popup").css("display","none");
+    })
 });
 

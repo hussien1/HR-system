@@ -798,23 +798,79 @@ nav .links .link-menu a{
   justify-content: center;
   align-items: center;
   text-align: center;
+  display: none;
 }
 .popup{
   width: 20%;
   padding: 16px;
-  background-color: #eee;
+  background-color: #fff;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border: 1px solid #888;
+  position: relative;
+  display: none;
 }
 .popup .inputContainer{
   width: 100%;
   text-align: left;
 }
-
+.popups .popup button{
+  min-width: 70px;
+  display: inline-block;
+  position: relative;
+  z-index: 888;
+  text-align: center;
+  padding: 5px 8px 8px 8px;
+  margin-right: 8px;
+  line-height: 1em;
+  font-size: 18px;
+  background-color: #314455;
+  border: 2px solid #314455;
+  cursor: pointer;
+  color: #eee;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.popbtn{
+  display: flex;
+  justify-content: flex-start;
+}
+.closePopup{
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  color: #888;
+  cursor: pointer;
+}
+.popupHeader{
+  font-weight: 300;
+  font: 18px;
+}
+.popups input:focus , .popups select:focus{
+  box-shadow: 0 0 8px 0 #e9eaec;
+}
+.popupInner{
+  width: 100%;
+}
+.aboutContainer p{
+  border: 1px solid #eee;
+  text-align: left;
+  font-size: 14px ;
+  padding: 16px;
+  line-height: 1.5;
+  margin-top: 16px;
+}
 .personnelProfile .personnel-img{
   display: flex;
   flex-direction: column;
@@ -839,6 +895,7 @@ nav .links .link-menu a{
 
 .select2-container {
   width:100% !important;
+  z-index: 9999;
 }
 
 .setDepartment table,.setPosition table{
